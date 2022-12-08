@@ -1,19 +1,32 @@
   
-/**
- * To run this file in Gitpod, use the 
- * command node map.js in the terminal
- */
+// /**
+//  * To run this file in Gitpod, use the 
+//  * command node map.js in the terminal
+//  */
 
-// Using a for loop
+// // Using a for loop
+// let nums = [ 1, 2, 3, 4, 5 ]
+// let results = []
+// for (let num of nums) {
+//   results.push( num *2 )
+// }
+// // console.log(results)
 
 
-// Using map()
+// // Using map()
+
+// // const multByTwo = function( num ) {
+// //   return num *2
+// // }
+
+// const mapResult = nums.map( nums => nums * 2 )
+
+// // console.log(mapResult)
+
+// // Simplified w/ map()
 
 
-// Simplified w/ map()
-
-
-// Simplfied w/ map() + arrow function
+// // Simplfied w/ map() + arrow function
 
 
 // With objects:
@@ -37,3 +50,15 @@ const students = [
     skill: 'CSS'
   },
 ];
+
+const studentsWithIds = students.map(student => [student.name, student.id])
+
+let student = students
+student.shift()
+student.shift()
+
+
+// const student1 = student.push("Roger")
+
+console.log(student)
+// console.log(rest)
